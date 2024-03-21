@@ -5,6 +5,7 @@ description = "Generate fake data that resembles fields in OpenAI API responses"
 authors = ["Michael Harris <mharris@definite.app>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/mharrisb1/faker-openai-api-provider"
 packages = [{ include = "faker_openai_api_provider", from = "src" }]
 
 [tool.poetry.dependencies]
