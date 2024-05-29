@@ -56,3 +56,13 @@ def test_fake_run_step_id():
 def test_fake_run_step_step_details_tool_call_id():
     tool_call_id = fake.openai().beta.thread.run.step.step_details.tool_call.id()
     assert_is_functional_id(tool_call_id, "call")
+
+
+def test_fake_vector_store_id():
+    vector_store_id = fake.openai().beta.vector_store.id()
+    assert_is_functional_id(vector_store_id, "vs")
+
+
+def test_fake_vector_store_file_batch_id():
+    vector_store_file_batch_id = fake.openai().beta.vector_store.file_batch.id()
+    assert_is_functional_id(vector_store_file_batch_id, "vsfb")

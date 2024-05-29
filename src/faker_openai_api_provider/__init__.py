@@ -2,11 +2,11 @@ from typing import Any
 
 from faker.providers import BaseProvider
 
-from .__version__ import __version__
 from ._chat import ChatProvider
 from ._file import FileProvider
 from ._assistants import AssistantProvider
 from ._thread import ThreadProvider
+from ._vector_store import VectorStoreProvider
 
 
 class OpenAiApiProvider(BaseProvider):
@@ -27,3 +27,4 @@ class OpenAiApiProvider(BaseProvider):
             def __init__(self) -> None:
                 self.assistant = AssistantProvider()
                 self.thread = ThreadProvider()
+                self.vector_store = VectorStoreProvider()
